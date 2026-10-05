@@ -1,68 +1,64 @@
-# Portfolio
+# My Portfolio
 
-My personal developer portfolio built with React.
+Hi! I'm Terje, and this is the repository for my personal portfolio.
 
-The website presents who I am, my technical skills, experience and software projects in a clean single-page interface.
+I built this site as a place to collect some of the things I've worked on, show what I know, and give a better picture of who I am as a developer than a CV can do on its own.
 
-## About the Project
+I'm a recent IT and Information Systems graduate from the University of Agder, and I'm especially interested in software development, system integration, GIS and technology that solves real problems.
 
-This portfolio was created to showcase my background and development projects as I continue building my experience as a developer.
+## What's in here?
 
-The site is structured as a single-page React application with separate sections for:
+The portfolio is built as a single-page React application and includes:
 
-- About me
-- Technical skills
-- Projects
-- Experience
-- Contact information
+- A little about me
+- Technologies and tools I've worked with
+- Some of my projects
+- Education and experience
+- Ways to get in touch
 
-The interface uses a dark theme with gradients and a fixed navigation bar for quick navigation between sections.
+It's still a work in progress, and I'll keep updating it as I build new things and learn more.
 
-## Technologies
+## Built with
 
-### Frontend
-
-- React 19
+- React
 - JavaScript
-- HTML
-- CSS
-
-### Libraries
-
+- HTML & CSS
 - Framer Motion
 - React Icons
 - React Scroll
 
-### Development
+The project was set up with Create React App and uses npm for dependency management.
 
-- Create React App
-- npm
-- Git
-- GitHub
+## Projects
 
-## Features
+### Task Manager
 
-- Single-page portfolio layout
-- Fixed navigation bar
-- Navigation between page sections
-- Responsive layout
-- Skills overview
-- Project showcase
-- Experience timeline
-- GitHub and LinkedIn links
-- Direct email contact
-- Dark UI with gradient styling
+A fullstack task management application I built to get more hands-on experience with both frontend and backend development.
 
-## Sections
+It includes user authentication, persistent data storage and the usual task management functionality.
 
-### Home
+**Built with:**  
+`Java` `Spring Boot` `React` `PostgreSQL` `Docker`
 
-Introduction section presenting my name and development focus, with direct navigation to my projects and contact information.
+[Check out the project on GitHub](https://github.com/tvsandvold/taskmanager)
 
-### About
+### Portfolio
 
-A short introduction to me as a developer and an overview of the technologies I work with across frontend, backend, databases and development tools.
+Well... you're looking at the repository for this one!
 
+I built the portfolio with React as a simple way to present myself, my experience and the projects I've worked on.
+
+**Built with:**  
+`React` `JavaScript` `CSS`
+
+## Running it locally
+
+If you want to run the portfolio yourself:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/tvsandvold/Portfolio.git
 ### Skills
 
 An overview of technologies I have experience with, including:

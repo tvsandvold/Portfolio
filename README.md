@@ -1,70 +1,199 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My personal developer portfolio built with React.
+
+The website presents who I am, my technical skills, experience and software projects in a clean single-page interface.
+
+## About the Project
+
+This portfolio was created to showcase my background and development projects as I continue building my experience as a developer.
+
+The site is structured as a single-page React application with separate sections for:
+
+- About me
+- Technical skills
+- Projects
+- Experience
+- Contact information
+
+The interface uses a dark theme with gradients and a fixed navigation bar for quick navigation between sections.
+
+## Technologies
+
+### Frontend
+
+- React 19
+- JavaScript
+- HTML
+- CSS
+
+### Libraries
+
+- Framer Motion
+- React Icons
+- React Scroll
+
+### Development
+
+- Create React App
+- npm
+- Git
+- GitHub
+
+## Features
+
+- Single-page portfolio layout
+- Fixed navigation bar
+- Navigation between page sections
+- Responsive layout
+- Skills overview
+- Project showcase
+- Experience timeline
+- GitHub and LinkedIn links
+- Direct email contact
+- Dark UI with gradient styling
+
+## Sections
+
+### Home
+
+Introduction section presenting my name and development focus, with direct navigation to my projects and contact information.
+
+### About
+
+A short introduction to me as a developer and an overview of the technologies I work with across frontend, backend, databases and development tools.
+
+### Skills
+
+An overview of technologies I have experience with, including:
+
+- Java
+- Spring Boot
+- React
+- JavaScript
+- Python
+- C#
+- HTML/CSS
+- PostgreSQL
+- Docker
+- Git
+
+### Projects
+
+The portfolio showcases development projects I have worked on.
+
+#### Task Manager
+
+A fullstack task management application with authentication and persistent data storage.
+
+**Technologies:**
+
+`Java` `Spring Boot` `React` `PostgreSQL` `Docker`
+
+[View Task Manager on GitHub](https://github.com/tvsandvold/taskmanager)
+
+#### Portfolio
+
+This portfolio website, built as a React single-page application.
+
+**Technologies:**
+
+`React` `JavaScript` `CSS`
+
+## Getting Started
+
+To run the project locally, you need Node.js and npm installed.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/tvsandvold/Portfolio.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Portfolio
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm start
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+### Development
 
-### `npm start`
+```bash
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the application in development mode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Tests
 
-### `npm test`
+```bash
+npm test
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the test suite.
 
-### `npm run build`
+### Production Build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Creates an optimized production build in the `build` directory.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+```text
+Portfolio/
+├── public/
+│   ├── index.html
+│   ├── manifest.json
+│   └── ...
+│
+├── src/
+│   ├── components/
+│   │   ├── About.js
+│   │   ├── Contact.js
+│   │   ├── Experience.js
+│   │   ├── Hero.js
+│   │   ├── Navbar.js
+│   │   ├── Projects.js
+│   │   └── Skills.js
+│   │
+│   ├── App.js
+│   ├── index.css
+│   └── index.js
+│
+├── package.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Terje Vo Sandvold**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- GitHub: [github.com/tvsandvold](https://github.com/tvsandvold)
+- LinkedIn: [linkedin.com/in/tvsandvold](https://linkedin.com/in/tvsandvold)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Status
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is under active development and will be updated as I build new projects and expand my technical experience.

@@ -4,7 +4,7 @@ Hi! I'm Terje, and this is the repository for my personal portfolio.
 
 I built this site as a place to collect some of the things I've worked on, show what I know, and give a better picture of who I am as a developer than a CV can do on its own.
 
-I'm a recent IT and Information Systems graduate from the University of Agder, and I'm especially interested in software development, system integration, GIS and technology that solves real problems.
+I'm a recent IT and Information Systems bachelor graduate from the University of Agder, and I'm especially interested in software development, AI, system integration, GIS and technology that solves real problems.
 
 ## What's in here?
 

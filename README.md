@@ -6,6 +6,12 @@ I built this site as a place to collect some of the things I've worked on, show 
 
 I'm a recent IT and Information Systems bachelor graduate from the University of Agder, and I'm especially interested in software development, AI, system integration, GIS and technology that solves real problems.
 
+## Live Portfolio
+
+The portfolio is live and available here:
+
+**[tvsandvold.pages.dev](https://tvsandvold.pages.dev)**
+
 ## What's in here?
 
 The portfolio is built as a single-page React application and includes:
@@ -40,7 +46,9 @@ It includes user authentication, persistent data storage and the usual task mana
 **Built with:**  
 `Java` `Spring Boot` `React` `PostgreSQL` `Docker`
 
-[Check out the project on GitHub](https://github.com/tvsandvold/taskmanager)
+[Check out the backend on GitHub](https://github.com/tvsandvold/taskmanager)
+
+[Check out the frontend on GitHub](https://github.com/tvsandvold/taskmanager-frontend)
 
 ### Portfolio
 
@@ -51,54 +59,11 @@ I built the portfolio with React as a simple way to present myself, my experienc
 **Built with:**  
 `React` `JavaScript` `CSS`
 
+[View the live portfolio](https://tvsandvold.pages.dev)
+
 ## Running it locally
 
 If you want to run the portfolio yourself:
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/tvsandvold/Portfolio.git
-### Skills
-
-An overview of technologies I have experience with, including:
-
-- Java
-- Spring Boot
-- React
-- JavaScript
-- Python
-- C#
-- HTML/CSS
-- PostgreSQL
-- Docker
-- Git
-
-### Projects
-
-The portfolio showcases development projects I have worked on.
-
-#### Task Manager
-
-A fullstack task management application with authentication and persistent data storage.
-
-**Technologies:**
-
-`Java` `Spring Boot` `React` `PostgreSQL` `Docker`
-
-[View Task Manager on GitHub](https://github.com/tvsandvold/taskmanager)
-
-#### Portfolio
-
-This portfolio website, built as a React single-page application.
-
-**Technologies:**
-
-`React` `JavaScript` `CSS`
-
-## Getting Started
-
-To run the project locally, you need Node.js and npm installed.
 
 ### 1. Clone the repository
 
@@ -187,9 +152,9 @@ Portfolio/
 
 **Terje Vo Sandvold**
 
-- GitHub: [github.com/tvsandvold](https://github.com/tvsandvold)
-- LinkedIn: [linkedin.com/in/tvsandvold](https://linkedin.com/in/tvsandvold)
+- [GitHub](https://github.com/tvsandvold)
+- [LinkedIn](https://linkedin.com/in/tvsandvold)
 
 ## Status
 
-This project is under active development and will be updated as I build new projects and expand my technical experience.
+This portfolio is actively maintained and will continue to evolve as I build new projects and gain more experience.

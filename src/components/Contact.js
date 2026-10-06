@@ -33,7 +33,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://linkedin.com/in/tvsandvold"
+            href="https://www.linkedin.com/in/terje-sandvold/"
             target="_blank"
             rel="noreferrer"
             className="contact-button contact-button-secondary"

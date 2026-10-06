@@ -1,12 +1,19 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 50);
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const links = [
@@ -18,20 +25,39 @@ export default function Navbar() {
     { label: 'Kontakt', id: 'kontakt' },
   ];
 
+  function closeMenu() {
+    setMenuOpen(false);
+  }
+
   return (
-    <nav style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100, padding: '16px 32px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', boxSizing: 'border-box', background: scrolled ? 'rgba(10,10,20,0.95)' : 'transparent', transition: 'all 0.3s ease' }}>
-      <span style={{ fontSize: '22px', fontWeight: '800', background: 'linear-gradient(90deg, #f97316, #ec4899, #8b5cf6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+    <nav className={`navbar ${scrolled || menuOpen ? 'navbar-background' : ''}`}>
+      <a href="#hjem" className="navbar-logo" onClick={closeMenu}>
         TVS
-      </span>
-      <div style={{ display: 'flex', gap: '28px' }}>
+      </a>
+
+      <div className={`navbar-links ${menuOpen ? 'navbar-links-open' : ''}`}>
         {links.map(function(link) {
           return (
-            <a key={link.id} href={'#' + link.id} style={{ color: 'rgba(255,255,255,0.7)', textDecoration: 'none', fontSize: '14px', fontWeight: '500' }}>
+            <a
+              key={link.id}
+              href={'#' + link.id}
+              className="navbar-link"
+              onClick={closeMenu}
+            >
               {link.label}
             </a>
           );
         })}
       </div>
+
+      <button
+        className="navbar-menu-button"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Åpne navigasjonsmeny"
+        aria-expanded={menuOpen}
+      >
+        {menuOpen ? 'Lukk' : 'Meny'}
+      </button>
     </nav>
   );
 }

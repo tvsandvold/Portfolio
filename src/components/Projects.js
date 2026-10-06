@@ -1,46 +1,96 @@
 export default function Projects() {
   const projects = [
     {
+      title: 'Parat-Bridge',
+      desc: 'Bachelorprosjekt utviklet i et team på seks studenter. Vi bygget en mellomvareprototype for sivil-militær krisehåndtering som koblet sammen eksisterende beredskapssystemer uten å endre systemene.',
+      tech: ['Node-RED', 'REST API', 'JavaScript', 'Systemintegrasjon'],
+      color: '#f97316',
+      featured: true,
+    },
+    {
       title: 'Task Manager',
       desc: 'Fullstack oppgavebehandler med JWT-autentisering, REST API og React-frontend.',
       tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Docker'],
-      color: '#f97316',
+      color: '#ec4899',
       github: 'https://github.com/tvsandvold/taskmanager',
-      emoji: '✅',
     },
     {
       title: 'Portfolio',
-      desc: 'Personlig porteføljeside bygget med React. Moderne design med animasjoner.',
+      desc: 'Personlig porteføljeside bygget med React og responsivt design, utviklet for å presentere prosjektene og kompetansen min.',
       tech: ['React', 'JavaScript', 'CSS'],
-      color: '#ec4899',
-      github: 'https://github.com/tvsandvold/portfolio',
-      emoji: '🌐',
+      color: '#8b5cf6',
+      github: 'https://github.com/tvsandvold/Portfolio',
     },
   ];
 
   return (
-    <section id="prosjekter" style={{ padding: '100px 20px', background: '#0d0d1a', fontFamily: 'Segoe UI, sans-serif' }}>
-      <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-        <p style={{ color: '#f97316', fontWeight: '600', letterSpacing: '3px', fontSize: '13px', marginBottom: '12px', textAlign: 'center' }}>PROSJEKTER</p>
-        <h2 style={{ fontSize: '42px', fontWeight: '800', color: 'white', margin: '0 0 60px', textAlign: 'center' }}>Hva jeg har bygd</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px' }}>
+    <section id="prosjekter" className="projects">
+      <div className="projects-container">
+        <p className="projects-label">
+          PROSJEKTER
+        </p>
+
+        <h2 className="projects-title">
+          Hva jeg har bygd
+        </h2>
+
+        <div className="projects-grid">
           {projects.map(function(project) {
             return (
-              <div key={project.title} style={{ background: 'rgba(255,255,255,0.04)', borderRadius: '20px', padding: '32px', border: '1px solid rgba(255,255,255,0.08)', display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                <div style={{ fontSize: '40px' }}>{project.emoji}</div>
-                <h3 style={{ color: 'white', fontSize: '22px', fontWeight: '700', margin: 0 }}>{project.title}</h3>
-                <p style={{ color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, margin: 0, fontSize: '15px' }}>{project.desc}</p>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                  {project.tech.map(function(t) {
+              <article
+                key={project.title}
+                className={
+                  project.featured
+                    ? 'project-card project-card-featured'
+                    : 'project-card'
+                }
+              >
+                {project.featured && (
+                  <span className="project-type">
+                    BACHELORPROSJEKT
+                  </span>
+                )}
+
+                <h3 className="project-title">
+                  {project.title}
+                </h3>
+
+                <p className="project-description">
+                  {project.desc}
+                </p>
+
+                <div className="project-technologies">
+                  {project.tech.map(function(technology) {
                     return (
-                      <span key={t} style={{ padding: '4px 12px', borderRadius: '99px', background: 'rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.6)', fontSize: '13px' }}>{t}</span>
+                      <span
+                        key={technology}
+                        className="project-technology"
+                      >
+                        {technology}
+                      </span>
                     );
                   })}
                 </div>
-                <a href={project.github} target="_blank" rel="noreferrer" style={{ marginTop: 'auto', display: 'inline-flex', alignItems: 'center', gap: '8px', color: project.color, textDecoration: 'none', fontWeight: '600', fontSize: '14px' }}>
-                  Se på GitHub →
-                </a>
-              </div>
+
+                {project.github ? (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-link"
+                    style={{ color: project.color }}
+                  >
+                    Se på GitHub →
+                  </a>
+                ) : (
+                  <span
+                    className="project-link project-link-static"
+                    style={{ color: project.color }}
+                  >
+                    Utviklet ved Universitetet i Agder
+                  </span>
+                )}
+              </article>
             );
           })}
         </div>
